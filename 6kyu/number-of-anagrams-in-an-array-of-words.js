@@ -8,7 +8,6 @@
 // There are 7 anagrams in the array ["dell", "ledl", "abc", "cba", "bca", "bac"]
 
 
-
 //SOLUTION
 function anagramCounter (wordsArray) {
     let counter = 0

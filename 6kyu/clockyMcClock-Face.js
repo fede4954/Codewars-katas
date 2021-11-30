@@ -22,7 +22,6 @@
 // 0 <= angle <= 360
 
 
-
 //SOLUTION
 var whatTimeIsIt = function(angle) {
     // if(angle === 0 || angle === 360) return '12:00'
