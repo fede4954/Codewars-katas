@@ -19,12 +19,11 @@
 // The input array will always be valid and formatted as in the example above.
 
 
-//SOLUTION
-function isRubyComing(list) {
-    let rubyDevs = false
-    list.forEach((dev) => {
-      if(dev.language === 'Ruby') rubyDevs = true
-    })
-    
-    return rubyDevs
-  }
+const isRubyComing = (list) => {
+  let rubyDevs = false
+  list.forEach((dev) => {
+    if (dev.language === 'Ruby') rubyDevs = true
+  })
+
+  return rubyDevs
+}

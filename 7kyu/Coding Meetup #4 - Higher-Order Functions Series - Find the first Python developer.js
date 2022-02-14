@@ -19,10 +19,9 @@
 // The input array will always be valid and formatted as in the example above.
 
 
-//SOLUTION
-function getFirstPython(list) {
-    const firstPythonDev = list.find((dev) => dev.language === 'Python')
-    
-    if(firstPythonDev) return `${firstPythonDev.firstName}, ${firstPythonDev.country}`
-    else return 'There will be no Python developers'
-  }
+const getFirstPython = (list) => {
+  const firstPythonDev = list.find((dev) => dev.language === 'Python')
+
+  if (firstPythonDev) return `${firstPythonDev.firstName}, ${firstPythonDev.country}`
+  else return 'There will be no Python developers'
+}

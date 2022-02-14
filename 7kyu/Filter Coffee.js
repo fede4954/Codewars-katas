@@ -9,13 +9,12 @@
 // The search function should return a string of prices for the coffees beans you can afford. The prices in this string are to be sorted in ascending order.
 
 
-//SOLUTION
-function search(budget, prices) {
-    const affordable = prices.filter((price) => {
-      return price <= budget
-    })
-    
-    return affordable.sort((a, b) => {
-      return a-b
-    }).toString()
-  }
+const search = (budget, prices) => {
+  const affordable = prices.filter((price) => {
+    return price <= budget
+  })
+
+  return affordable.sort((a, b) => {
+    return a - b
+  }).toString()
+}

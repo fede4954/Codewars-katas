@@ -5,16 +5,10 @@
 // Examples: spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw" spinWords( "This is a test") => returns "This is a test" spinWords( "This is another test" )=> returns "This is rehtona test"
 
 
-function spinWords(string) {
-  const newSentence = string
-    .split('')
+const spinWords = (words) => {
+  return words
+    .split(' ')
     .map((word) => {
-      if (word.length >= 5) {
-        return word.split('').reverse().join('')
-      } else return word
-    })
-    .toString()
-    .replace(/,/g, '')
-
-  return newSentence
+      return (word.length >= 5) ? word.split('').reverse().join('') : word
+    }).join(' ')
 }

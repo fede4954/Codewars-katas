@@ -21,12 +21,11 @@
 // All data will always be valid and uniform as in the example above.
 
 
-//SOLUTION
-function countDevelopers(list) {
-    let devCount = 0
-    list.forEach((dev) => {
-      if(dev.continent == 'Europe' && dev.language == 'JavaScript') devCount++
-    })
-    
-    return devCount
-  }
+const countDevelopers = (list) => {
+  let devCount = 0
+  list.forEach((dev) => {
+    if (dev.continent == 'Europe' && dev.language == 'JavaScript') devCount++
+  })
+
+  return devCount
+}

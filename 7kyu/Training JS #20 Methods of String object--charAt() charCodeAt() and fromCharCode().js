@@ -138,8 +138,8 @@ const topSecret = (str) => {
 }
 
 //question1: The top secret file number is...
-answer1='2788'
+answer1 = '2788'
 //question2: Super agent's name is...
-answer2='KnqAPT'
+answer2 = 'KnqAPT'
 //question3: He stole the treasure is...
-answer3='Toilet paper'
+answer3 = 'Toilet paper'

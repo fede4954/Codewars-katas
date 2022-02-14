@@ -32,20 +32,19 @@
 // The input array will always be valid and formatted as in the example above.
 
 
-//SOLUTION
-function greetDevelopers(list) {
-    const devList = list.map((dev) => {
-      const {firstName, lastName, country, continent, age, language} = dev
-      return {
-        firstName,
-        lastName,
-        country,
-        continent,
-        age,
-        language,
-        greeting: `Hi ${firstName}, what do you like the most about ${language}?`
-      }
-    })
-    
-    return devList
-  }
+const greetDevelopers = (list) => {
+  const devList = list.map((dev) => {
+    const { firstName, lastName, country, continent, age, language } = dev
+    return {
+      firstName,
+      lastName,
+      country,
+      continent,
+      age,
+      language,
+      greeting: `Hi ${firstName}, what do you like the most about ${language}?`
+    }
+  })
+
+  return devList
+}

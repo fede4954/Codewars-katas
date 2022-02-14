@@ -19,14 +19,13 @@
 // The input array will always be valid and formatted as in the example above.
 
 
-//SOLUTION
-function isSameLanguage(list) {
-    const lengthCheck = list.length
-    const languageCheck = list[0].language
-    const sameLangDevs = list.filter((dev) => {
-      return dev.language === languageCheck
-    })
-    
-    if(lengthCheck === sameLangDevs.length) return true
-    else return false
-  }
+const isSameLanguage = (list) => {
+  const lengthCheck = list.length
+  const languageCheck = list[0].language
+  const sameLangDevs = list.filter((dev) => {
+    return dev.language === languageCheck
+  })
+
+  if (lengthCheck === sameLangDevs.length) return true
+  else return false
+}

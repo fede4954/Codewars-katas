@@ -51,43 +51,43 @@
 
 
 const thirt = (n) => {
-    let step = 1
-    let previousN
-    let sum = 0
-  
-    while (previousN !== sum) {
-      for (let i = n.toString().length; i > 0; i--) {
-        switch (step) {
-          case 1:
-            sum += parseInt(n.toString()[i - 1]) * 1
-            step++
-            continue
-          case 2:
-            sum += parseInt(n.toString()[i - 1]) * 10
-            step++
-            continue
-          case 3:
-            sum += parseInt(n.toString()[i - 1]) * 9
-            step++
-            continue
-          case 4:
-            sum += parseInt(n.toString()[i - 1]) * 12
-            step++
-            continue
-          case 5:
-            sum += parseInt(n.toString()[i - 1]) * 3
-            step++
-            continue
-          case 6:
-            sum += parseInt(n.toString()[i - 1]) * 4
-            step = 1
-            continue
-        }
+  let step = 1
+  let previousN
+  let sum = 0
+
+  while (previousN !== sum) {
+    for (let i = n.toString().length; i > 0; i--) {
+      switch (step) {
+        case 1:
+          sum += parseInt(n.toString()[i - 1]) * 1
+          step++
+          continue
+        case 2:
+          sum += parseInt(n.toString()[i - 1]) * 10
+          step++
+          continue
+        case 3:
+          sum += parseInt(n.toString()[i - 1]) * 9
+          step++
+          continue
+        case 4:
+          sum += parseInt(n.toString()[i - 1]) * 12
+          step++
+          continue
+        case 5:
+          sum += parseInt(n.toString()[i - 1]) * 3
+          step++
+          continue
+        case 6:
+          sum += parseInt(n.toString()[i - 1]) * 4
+          step = 1
+          continue
       }
-      step = 1
-      n = sum
-      if(previousN === sum) return sum
-      previousN = sum
-      sum = 0
     }
+    step = 1
+    n = sum
+    if (previousN === sum) return sum
+    previousN = sum
+    sum = 0
   }
+}

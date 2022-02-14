@@ -22,26 +22,23 @@
 // 0 <= angle <= 360
 
 
-//SOLUTION
-var whatTimeIsIt = function(angle) {
-    // if(angle === 0 || angle === 360) return '12:00'
-  
-    let hours = 0
-    let minutes = 0
-    let totalTimeInMinutes = angle / 0.5
-  
-    while(totalTimeInMinutes >= 60) {
-      totalTimeInMinutes -= 60
-      hours++
-    }
-  
-    minutes = totalTimeInMinutes.toString()
-    if(minutes < 10) minutes = '0' + minutes
-    minutes = minutes.substr(0, 2)
-    
-    hours = hours.toString()
-    if(hours < 10) hours = '0' + hours
-    if(angle < 30) hours = '12'
-  
-    return `${hours}:${minutes}`
+const whatTimeIsIt = (angle) => {
+  let hours = 0
+  let minutes = 0
+  let totalTimeInMinutes = angle / 0.5
+
+  while (totalTimeInMinutes >= 60) {
+    totalTimeInMinutes -= 60
+    hours++
+  }
+
+  minutes = totalTimeInMinutes.toString()
+  if (minutes < 10) minutes = '0' + minutes
+  minutes = minutes.substr(0, 2)
+
+  hours = hours.toString()
+  if (hours < 10) hours = '0' + hours
+  if (angle < 30) hours = '12'
+
+  return `${hours}:${minutes}`
 }

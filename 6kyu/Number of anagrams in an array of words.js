@@ -8,14 +8,13 @@
 // There are 7 anagrams in the array ["dell", "ledl", "abc", "cba", "bca", "bac"]
 
 
-//SOLUTION
-function anagramCounter (wordsArray) {
-    let counter = 0
-    for(let i = 0; i < wordsArray.length; i++){
-      for(let k = i + 1; k < wordsArray.length; k++){
-        if(wordsArray[i].split('').sort().join('') === wordsArray[k].split('').sort().join('')) counter++
-      }
+const anagramCounter = (wordsArray) => {
+  let counter = 0
+  for (let i = 0; i < wordsArray.length; i++) {
+    for (let k = i + 1; k < wordsArray.length; k++) {
+      if (wordsArray[i].split('').sort().join('') === wordsArray[k].split('').sort().join('')) counter++
     }
-  
-    return counter
+  }
+
+  return counter
 }

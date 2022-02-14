@@ -24,9 +24,8 @@
 // The strings representing a given language will always be formatted in the same way (e.g. 'JavaScript' will always be formatted with upper-case 'J' and 'S'.
 
 
-//SOLUTION
-function findAdmin(list, lang) {
-    return list.filter((dev) => {
-      return dev.language === lang && dev.githubAdmin === 'yes'
-    })
-  }
+const findAdmin = (list, lang) => {
+  return list.filter((dev) => {
+    return dev.language === lang && dev.githubAdmin === 'yes'
+  })
+}
